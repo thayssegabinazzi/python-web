@@ -1,6 +1,11 @@
 from flask import Flask 
-app = Flask(__name__)
 
-@app.route ("/")
+variavelweb = Flask(__name__)
+
+@variavelweb.route("/")
+
 def hello():
 	return "hello world"
+
+if __name__ == "__main__":
+	variavelweb.run()
